@@ -1,0 +1,38 @@
+
+[Settings]
+
+# Seconds until 'sleep' is activated.
+# leave value empty for no sleep
+
+sleep_time = 300
+
+# Number of Overlapping pixels between tab_handle.png and tab_frame.png
+# Take note of default tab images in assets; handle center sticks out a few pixles farther than the border so it can cover the border of the tab frame image.
+# Change this value match custom tabs. Be careful, it effects all tab_handle images.
+# Default value = 5, do not leave empty.
+
+overlapping_pxs = 5
+
+
+# Colors are in order of tabs.
+# Use comma seperated RGB values: (R,G,B), (R,G,B), ...
+# Example: font_colors = (255,0,0),(0,255,0),(0,0,255)
+# Example: font_colors = 
+# Example: font_colors = (0,0,0)
+
+font_colors = (0,0,0),(0,255,0),(255,0,0)
+
+
+# Font sizes are in order of tabs
+# Use comma seperated whole numbers
+# Example: font_sizes = 50,40,50
+# Example: font_colors = 
+# Example: font_colors = 40
+
+font_sizes = 40,44,50
+
+
+# Color behind tab handles
+# Example: (50,50,50)
+
+bar_color = (50,0,0)
