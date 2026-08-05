@@ -3,11 +3,11 @@ This repository creates a graphical interface to display personal collection ent
 
 Main window example:
 _____________________________________________________________________________________________________________________
-![Example](readme%20pictures/catalog%20main.png)
+![Example](readme%20pictures/main%20example.png)
 _____________________________________________________________________________________________________________________
 Entry window example:
 _____________________________________________________________________________________________________________________
-![Entry Example](readme%20pictures/entry%20main.png)
+![Entry Example](readme%20pictures/entry%20example.png)
 _____________________________________________________________________________________________________________________
 
 Data is sorted into 3 nested groups: tabs -> groups -> entries
@@ -16,7 +16,6 @@ This project should not be your main way of storing important information. Perso
 
 # What is Needed to Run
 This project can run on Windows and Linux (I use a raspberry pi)  
-This project runs on python 3.12.X or 3.13.X  
 It uses the following libraries:  
 pygame  
 sys  
@@ -25,7 +24,8 @@ openpyxl
 zipfile  
 re  
 dataclasses  
-
+configparser  
+time  
 
 # How to Add Data
 This project is designed to work with a specifically formatted Word or Google document. 
@@ -47,6 +47,19 @@ Make sure the new excel file is the only excel file in the project folder.
 Running ExtractExcel.py will take the contents and generate a new folder in database/
 Every time ExtractExcel is run, it makes a NEW folder in database.
 Each folder in database will correspond  to a tab in the main program.
+
+# Customize Your Program
+This program supports customization through sprite upload and a config.txt  
+View config.txt to see options for: font size, font color, side bar color, sleep time.  
+Program also supports file uploads for the following per each 'tab' folder in the database:  
+tab handle (size/dimensions matters) -> tab_handle.png  
+tab frame -> tab_handle.png  
+background -> background.png  
+loading screen -> loading.png  
+font -> *.ttf OR *.TTF  
+![Format Example](readme%20pictures/file%20custom%20pic.png)
+These files are placed directly under the tab number folder (auto generated from data extractor program).
+![Format Example](readme%20pictures/filenav%20pic.png)
 
 
 # Contributions
