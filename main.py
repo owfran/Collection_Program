@@ -5,6 +5,7 @@ from pathlib import Path
 import Database
 import configparser
 import time
+print(pygame.image.get_extended())
 """
 Structure:
 A 'tab'/'section' is the highest level object, created from the data loader program. At least 1 is required to boot the program.
@@ -23,14 +24,9 @@ clicking to open the entry info panel.
 Sleeping loop starts based on a sleep timer reaching its user defined maximum value. Timer reset by mouse down and mouse up actions.
 """
 # TO DO
-# customize loading screen
 # currently doesnt letter or pillar box. Probably wont change due to 16:9 and 16:10 (minimal stretch) monitors being the focus group anyways.
-
-# future verions TO DO
-# customizability & prefromance update (tabs and tab loading. adds a config.txt. adds folder for user images)
-# Word Doc support update
-# geographic support update 
-# executibles update
+# geographic support
+# executibles 
 
 pygame.init()
 base_dir = Path(__file__).resolve().parent
@@ -379,7 +375,7 @@ def get_info_panel_text(info_panel_entry,font_size): # returns a list of text se
     # Takes an Entry object and uses its text file path to get text.
     # container width = target character count × font size × multiplier
     max_width = 970
-    multiplier = .6 # experimental value
+    multiplier = .65 # experimental value
     max_characters = round(max_width / (font_size * multiplier))
 
     file_path = info_panel_entry.txt_path
