@@ -1,4 +1,10 @@
-# Version 2 (Current)
+# Version 3 (Current)
+Added data extractor for .docx file types so users could just download google docs.  
+Deleted excel extractor.  
+Added more in line comments for ease of use.  
+Updated README.md  
+
+# Version 2
 Changed pygame to pygame-ce.  
 Customizability options through file addition.  
 Customizability options through config.txt  
