@@ -20,9 +20,8 @@ It uses the following libraries:
 pygame  
 sys  
 pathlib  
-openpyxl  
+docx2python  
 zipfile  
-re  
 dataclasses  
 configparser  
 time  
@@ -37,16 +36,8 @@ The entries in each group must be organized by a 2 wide table with images on the
 _____________________________________________________________________________________________________________________
 ![Format Example](readme%20pictures/EntryGuide.png)
 _____________________________________________________________________________________________________________________
-To download the data to the program, download the Google Doc as a word, then open the document and ctrlA and ctrlC the whole document.
-Open a brand new Excel file next to ExcelExtract.py and paste the document into the top left corner.
-_____________________________________________________________________________________________________________________
-![Format Example](readme%20pictures/ExcelGuide.png)
-_____________________________________________________________________________________________________________________
-
-Make sure the new excel file is the only excel file in the project folder.
-Running ExtractExcel.py will take the contents and generate a new folder in database/
-Every time ExtractExcel is run, it makes a NEW folder in database.
-Each folder in database will correspond  to a tab in the main program.
+To download the data to the program, download the Google Doc as a word / .docx (or just originally write in word). Move the word document to the project folder and run the extractDOCX.py, it makes a NEW folder in database each time it is run.
+Each folder in database will correspond to a tab in the main program.
 
 # Customize Your Program
 This program supports customization through sprite upload and a config.txt  
